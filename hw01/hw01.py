@@ -66,6 +66,15 @@ def largest_factor(n):
     1
     """
     "*** YOUR CODE HERE ***"
+    if n % 2 != 0 or n == 2 :
+        for i in range(1, n, 2) :
+            if n % i == 0 :
+                max = i
+    else :
+        for i in range(2, n, 2) :
+            if n % i == 0 :
+                 max = i
+    return max
 
 
 def hailstone(n):
