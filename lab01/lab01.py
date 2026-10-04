@@ -111,4 +111,10 @@ def double_eights(n):
     False
     """
     "*** YOUR CODE HERE ***"
-
+    if n // 10 != 0 :
+        if n % 10 == 8 and n // 10 % 10 == 8 :
+            return True
+        else :
+            return double_eights(n // 10)#递归调用不要忘记return
+    else :
+        return False
