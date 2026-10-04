@@ -42,6 +42,9 @@ def falling(n, k):
     1
     """
     "*** YOUR CODE HERE ***"
+    if k  > 1 :
+        return n * falling(n - 1, k - 1)
+    return pow(n, k)
 
 
 def divisible_by_k(n, k):
